@@ -21,16 +21,11 @@ def main(VideoName):
 
     #Extract Sound From Video
     [S_samplingrate, S_average, S_averageNoAlignment, S_x]=vsv.VmSoundFromVideo(cap,nscales,norients,samplingrate,dsamplefactor)
-    #print("S_x,S_samplingr:",S_x,S_samplingrate)
- #---
+    
     S_filename = VideoName
 
-    #play sound 
-    #print('before sound')
-    write("rsound.wav",S_samplingrate,S_x.flatten())
-    #sd.play( data=S_x.flatten().T, samplerate=S_samplingrate)
-    #print('after sound')
-
+    write("mary_abe.wav",S_samplingrate,S_x.flatten())
+    
 
 if __name__ == '__main__':
     main(sys.argv[1])

@@ -16,6 +16,7 @@ def SteerToHarmonicMatrix(harmonics, angles, evenorodd):
 
     #create an inverse matrix that maps Fourier Components onto steerable basis
     
+
     inmtx=np.zeros((numh,len(angles)),int)
     col=0
     for h in harmonics:
